@@ -8,12 +8,13 @@ header {
 table {
   border-collapse: collapse;
   width: 50%;
+  margin-top: 2%;
   margin-left:25%;
 }
 
 th, td {
-  text-align: center;
-  padding: 2px;
+  text-align: left;
+  padding: 1px;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
@@ -29,7 +30,7 @@ input[type=text], select {
 }
 .btndiv{
 	margin-left:45%;
-	margin-top:3px;
+	margin-top:2%;
 	margin-bottom:3px;
 }
 .btn {
