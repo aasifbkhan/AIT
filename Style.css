@@ -1,0 +1,49 @@
+header {
+  background-color:  #004d99;
+  padding: 1px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left:25%;
+}
+
+th, td {
+  text-align: center;
+  padding: 2px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+input[type=text], select {
+  width: 50%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btndiv{
+	margin-left:45%;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button1 {background-color: #008CBA;border-radius: 8px;}
+.button2 { background-color: Red;border-radius: 8px;}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: Black;
+}

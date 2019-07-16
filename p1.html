@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<script src="C:\Users\admin\Desktop\Aasif\angular-1.7.8\angular.min.js"></script>
+    	<script src="C:\Users\admin\Desktop\Aasif\p1.js"></script>
+    	<link rel="stylesheet" href="C:\Users\admin\Desktop\Aasif\Style.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+	<header>
+		<h1>First Project Using AngularJS</h1>
+	</header>
+	<form name="myForm" ng-app="myApp" ng-controller="myController" novalidate> 
+    <div>
+        <table>
+            <tr>
+                <td>Course :</td>
+                <td><input type="text" ng-model="course" required/><span style="color:red;" ng-show="myForm.course.$error.required">Course Is Required</span></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td><input type="text" ng-model="class" required/></td>
+            </tr>
+            <tr>
+                <td>Code</td>
+                <td><input type="text" ng-model="code" required/></td>
+            </tr>
+            <tr>
+                <td>Subject Name</td>
+                <td><input type="text" ng-model="subnme" required/></td>
+            </tr>
+        </table>
+        <div class="btndiv">
+        	<button class="btn button1" ng-click="addRow()"> Add Row </button>
+        </div>
+    </form>
+        <!--CREATE A TABLE-->
+        <table> 
+            <tr>
+                <th>Sr. No.</th>
+                <th>Course</th>
+                <th>Class</th>
+                <th>Code</th>
+                <th>Subject Name</th>
+            </tr>
+
+            <tr ng-repeat="info in infoArray">
+                <td><label>{{$index + 1}}</label></td>
+                <td><label>{{info.course}}</label></td>
+                <td><label>{{info.class}}</label></td>
+                <td><label>{{info.code}}</label></td>
+                <td><label>{{info.subnme}}</label></td>
+                <td><button class="btn button2" ng-click="deleteRow($index)"><i class="fa fa-trash"></button></td>
+            </tr>
+        </table>
+
+</body>
+
+<!--The Controller-->
+
+
+</html>
