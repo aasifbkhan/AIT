@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="Style2.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
-            document.getElementById("create").addEventListener("click", function (evt) {
+            document.getElementById("about").addEventListener("click", function (evt) {
                 createContent();
             });
             // document.getElementById("change").addEventListener("click", function (evt) {
@@ -24,7 +24,7 @@
         });
         function createContent() {
             // use the html() function to change the content of the div
-            $("#example").html("<p>Hi there!</p>");
+            $('#example').load("panal.html");
         }
         
         // function changeContent() {
