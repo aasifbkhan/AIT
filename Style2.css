@@ -1,3 +1,6 @@
+body {
+  background-color:  #ffffcc;
+}
 header {
   background-color: #669999;
   padding: 30px;
@@ -24,6 +27,32 @@ footer{
   margin-right: auto;
   width: 50%;
 }
-.prof{
-	
+.custompanel{ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 140%;
+}
+.panelhead{font-style: bold;font-family: serif;font-size: 20px;}
+.button{
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+/* Darker background on mouse-over */
+.button:hover {
+  background-color: Black;
+}
+.button1{margin-left: 75%;background-color: #ff6666;border-radius: 5px;}
+table {
+  border-collapse: collapse;
+  width: 25%;
+  margin-top: 2%;
+  margin-left:50px;
+}
+th, td {
+  text-align: left;
+  padding: 1px;
 }

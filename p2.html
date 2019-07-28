@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="C:\Users\Aasif\Desktop\AIT\Style2.css">
-	<link rel="stylesheet" type="text/css" href="C:\Users\Aasif\Desktop\AIT\bootstrap-4.3.1-dist\css\bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style2.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            document.getElementById("create").addEventListener("click", function (evt) {
+                createContent();
+            });
+            // document.getElementById("change").addEventListener("click", function (evt) {
+            //     changeContent();
+            // });
+            // document.getElementById("changeAll").addEventListener("click", function (evt) {
+            //     changeAllTheContent();
+            // });
+            // use the html() function to get the current HTML of an element
+            //alert($("#example").html());
+        });
+        function createContent() {
+            // use the html() function to change the content of the div
+            $("#example").html("<p>Hi there!</p>");
+        }
+        
+        // function changeContent() {
+        //     // set the text content of the last paragraph
+        //     var newItem = $("<p>This is a new paragraph</p>");
+        //     $("#para1").html(newItem);
+        // }
+        
+        // function changeAllTheContent() {
+        //     $("#example p").text("<p>This is a paragraph</p>");
+        // }
+    </script>
 </head>
 <body>
 	<header>
 		<h1>My Profile</h1>
 	</header>
-	<div class="container">
-		<div class="card center" style="width: 350px">
-			<div class="card-header">
-				<h5>Allana Institute Of Managment Sciences</h5>
-			</div>
-    		<div class="card-body">
-    			<img src="C:\Users\Aasif\Desktop\AIT\invis-user.png" width="100" class="center">
-    		</div> 
-    		<div class="card-footer">
-    			<div>
-    				<h3>Mr. John</h3>
-    				<p>Senior Software Engineer</p>
-    			</div>
-    			<div class="">
-    				<button type="button" class="btn btn-info" style="margin-left: 50px" data-toggle="modal" data-target="#about">About</button>
-    				<button type="button" class="btn btn-info">Skils</button>
-    				<button type="button" class="btn btn-info">Projects</button>
-    				<!-- About Model -->
-    				<div class="modal" id="about">
-    					<div class="modal-dialog">
-    						<div class="modal-content">
-    							<!-- header -->
-    							<div class="modal-header">
-    								<h4>Modal Heading</h4>
-    								<button type="button" class="close" data-dismiss="modal">&times;</button>
-    							</div>
-    							<!-- body -->
-    							<div class="modal-body">
-    								Modal body..
-    							</div>
-    							<!-- footer -->
-    							<div class="modal-footer">
-          							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        						</div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-		</div>
+	<div class="container row">
+        <div class="col-sm-4">
+		  <div class="card center" style="width: 350px">
+			    <div class="card-header">
+				    <h4>Allana Institute Of Managment Sciences</h4>
+			    </div>
+    		    <div class="card-body">
+    			    <img src="invis-user.png" width="100" class="center">
+    		    </div> 
+    		    <div class="card-footer">
+    			    <div>
+    				    <h3>Mr. John</h3>
+    				    <p>Senior Software Engineer</p>
+    			    </div>
+    			    <div>
+    				    <button id="about" type="button" class="btn btn-info" style="margin-left: 50px">About</button>
+    				    <button id="skils" type="button" class="btn btn-info">Skils</button>
+    				    <button id="projects" type="button" class="btn btn-info">Projects</button>
+    			    </div>
+    		    </div>
+		    </div>
+        </div>
+        <div class="col-sm-8" id="example">
+            <!-- <form>
+                <div class="panel panel-info custompanel">
+                    <div class="panel-heading panelhead">
+                        About
+                        <button type="button" class="button button1"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Full Name:</h4>
+                        <p>{{name}}</p>
+                        <h4>Date Of Birth:</h4>
+                        <p>23rd, July 1998</p>
+                        <h4>Education Details:</h4>
+                        <table>
+                            <tr>
+                                <td>ABC</td>
+                                <td>School</td>
+                            </tr>
+                        </table>
+                        <h4>Contact:</h4>
+                        <p>+91 9923574621</p>
+                        <h4>Address:</h4>
+                        <p>Pune.</p>
+                    </div>
+                </div>
+            </form> -->
+        </div>
 	</div>
 	<footer>
 		<h6>Developed By Aasif Khan</h6>
