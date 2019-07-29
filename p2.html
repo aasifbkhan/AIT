@@ -9,34 +9,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
+        
         $("document").ready(function() {
             document.getElementById("about").addEventListener("click", function (evt) {
-                createContent();
+                aboutProfile();
             });
-            // document.getElementById("change").addEventListener("click", function (evt) {
-            //     changeContent();
-            // });
-            // document.getElementById("changeAll").addEventListener("click", function (evt) {
-            //     changeAllTheContent();
-            // });
-            // use the html() function to get the current HTML of an element
-            //alert($("#example").html());
+            document.getElementById("skils").addEventListener("click", function (evt) {
+                aboutSkils();
+            });
+            document.getElementById("projects").addEventListener("click", function (evt) {
+                aboutProjects();
+            });
         });
-        function createContent() {
-            // use the html() function to change the content of the div
-            $('#example').load("panal.html");
+
+        function aboutProfile() {
+            $( "#example" ).load( "panal.html" );
+        } 
+        function aboutSkils() {
+            $( "#example" ).load( "panal2.html" );
         }
-        
-        // function changeContent() {
-        //     // set the text content of the last paragraph
-        //     var newItem = $("<p>This is a new paragraph</p>");
-        //     $("#para1").html(newItem);
-        // }
-        
-        // function changeAllTheContent() {
-        //     $("#example p").text("<p>This is a paragraph</p>");
-        // }
+        function aboutProjects() {
+            $( "#example" ).load( "panal3.html" );
+        } 
+          
     </script>
+
+
 </head>
 <body>
 	<header>
@@ -64,33 +62,7 @@
     		    </div>
 		    </div>
         </div>
-        <div class="col-sm-8" id="example">
-            <!-- <form>
-                <div class="panel panel-info custompanel">
-                    <div class="panel-heading panelhead">
-                        About
-                        <button type="button" class="button button1"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Full Name:</h4>
-                        <p>{{name}}</p>
-                        <h4>Date Of Birth:</h4>
-                        <p>23rd, July 1998</p>
-                        <h4>Education Details:</h4>
-                        <table>
-                            <tr>
-                                <td>ABC</td>
-                                <td>School</td>
-                            </tr>
-                        </table>
-                        <h4>Contact:</h4>
-                        <p>+91 9923574621</p>
-                        <h4>Address:</h4>
-                        <p>Pune.</p>
-                    </div>
-                </div>
-            </form> -->
-        </div>
+        <div class="col-sm-8" id="example"></div>
 	</div>
 	<footer>
 		<h6>Developed By Aasif Khan</h6>
