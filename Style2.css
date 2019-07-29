@@ -48,11 +48,11 @@ footer{
 .button1{margin-left: 75%;background-color: #ff6666;border-radius: 5px;}
 table {
   border-collapse: collapse;
-  width: 25%;
+  width: 70%;
   margin-top: 2%;
   margin-left:50px;
 }
 th, td {
   text-align: left;
-  padding: 1px;
+  padding: 10%;
 }
